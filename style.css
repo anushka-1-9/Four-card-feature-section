@@ -1,0 +1,166 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", serif;
+}
+
+.container {
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: hsl(0, 0%, 98%);
+}
+
+.main-heading {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.main-heading h1.main-head {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: hsl(234, 12%, 34%);
+}
+
+.main-heading h1.sec-head {
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 2.6rem;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 0.8rem;
+}
+
+.main-heading p {
+  color: hsl(229, 6%, 66%);
+  margin: 0;
+  max-width: 45%;
+  margin: auto;
+}
+
+.subpoints {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1300px;
+  gap: 40px;
+}
+
+.card1 {
+  
+grid-column: 1 / 2;
+grid-row: 2;
+border-top: 5px solid hsl(180, 62%, 55%);
+background: url(./images/icon-supervisor.svg);
+background-repeat: no-repeat;
+background-position: 88% 82%;
+}
+
+.card2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  border-top: 5px solid hsl(0, 78%, 62%);
+  background: url(./images/icon-team-builder.svg);
+background-repeat: no-repeat;
+background-position: 88% 82%;
+    margin-bottom: -10rem;
+}
+
+.card3 {
+  grid-column: 2 / 3;
+  grid-row: 3;
+  border-top: 5px solid hsl(34, 97%, 64%);
+  background: url(./images/icon-karma.svg);
+background-repeat: no-repeat;
+background-position: 88% 82%;
+margin-top: -10rem;
+
+}
+
+.card4 {
+ 
+grid-column: 3 / 4;
+ grid-row: 2;
+border-top: 5px solid hsl(212, 86%, 64%);
+background: url(./images/icon-calculator.svg);
+background-repeat: no-repeat;
+background-position: 88% 82%;
+}
+
+.card {
+  padding: 1rem 3rem 5rem 3rem;
+  min-height: 180px;
+  box-shadow: hsla(229, 6%, 66%, 0.4) 0px 8px 24px;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.card h2 {
+  color: hsl(234, 12%, 34%);
+  font-size: 1.7rem;
+  margin-bottom: 0;
+}
+
+.card p {
+  color: hsl(229, 6%, 66%);
+}
+
+@media screen and (max-width:920px) {
+
+  html {
+    font-size:14px;
+  }
+
+  .subcontainer {
+    padding: 4rem 2rem;
+}
+
+  .main-heading h1.main-head {
+    font-size: 1.6rem;
+}
+
+.main-heading h1.sec-head {
+  font-size: 1.66rem;
+}
+
+.main-heading p {
+  max-width: 90%;
+}
+
+  .subpoints {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+}
+
+.card1 {
+  grid-column: 1;
+  grid-row: 1; 
+}
+
+.card2 {
+  grid-column: 1;
+  grid-row: 2;
+  margin-bottom: 0;
+}
+
+.card3 {
+  grid-column: 1;
+  grid-row: 3;
+  margin-top: 0;
+}
+
+.card4 {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+}
+
+.card {
+  padding: 1rem 2rem 5rem 2rem; 
+}
+
+}
